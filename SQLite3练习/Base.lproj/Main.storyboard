@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlc-Si-hLi">
+                                <rect key="frame" x="154" y="120" width="68" height="30"/>
+                                <state key="normal" title="creatNote"/>
+                                <connections>
+                                    <action selector="creatNote" destination="BYZ-38-t0r" eventType="touchUpInside" id="al0-b1-Xv0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzq-pu-Hgd">
+                                <rect key="frame" x="146" y="250" width="84" height="30"/>
+                                <state key="normal" title="removeNote"/>
+                                <connections>
+                                    <action selector="removeNote" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRV-43-GSA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxs-km-VtV">
+                                <rect key="frame" x="164" y="380" width="46" height="30"/>
+                                <state key="normal" title="findAll"/>
+                                <connections>
+                                    <action selector="findAll" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vi-vA-y4z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kxs-km-VtV" firstAttribute="top" secondItem="Wzq-pu-Hgd" secondAttribute="bottom" constant="100" id="6MQ-FJ-s7F"/>
+                            <constraint firstItem="Wzq-pu-Hgd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8mo-FJ-t1U"/>
+                            <constraint firstItem="kxs-km-VtV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cp8-d8-Th0"/>
+                            <constraint firstItem="Wzq-pu-Hgd" firstAttribute="top" secondItem="mlc-Si-hLi" secondAttribute="bottom" constant="100" id="Hng-RF-ybf"/>
+                            <constraint firstItem="mlc-Si-hLi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="N5v-q2-1Ey"/>
+                            <constraint firstItem="mlc-Si-hLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfu-tw-cg4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
